@@ -28,9 +28,16 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
     @Override
     public void onBindViewHolder(@NonNull MascotaViewHolder mascotaViewHolder, int position) {
         Mascota mascota = mascotas.get(position);
+        if (mascota.getNombre().equals("NONE")){
+            mascotaViewHolder.tvNombreCV.setText("");
+            mascotaViewHolder.imgFav.setVisibility(View.INVISIBLE);
+        }else {
+            mascotaViewHolder.tvNombreCV.setText(mascota.getNombre());
+        }
         mascotaViewHolder.imgUrlCV.setImageResource(mascota.getUrlImage());
-        mascotaViewHolder.tvNombreCV.setText(mascota.getNombre());
         mascotaViewHolder.tvLikesCV.setText(String.valueOf(mascota.getLikes()));
+
+
     }
 
     @Override
@@ -42,12 +49,14 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         private ImageView imgUrlCV;
         private TextView tvNombreCV;
         private TextView tvLikesCV;
+        private ImageView imgFav;
 
         public MascotaViewHolder(@NonNull View itemView) {
             super(itemView);
             imgUrlCV    = (ImageView) itemView.findViewById(R.id.imgUrlCV);
             tvNombreCV  = (TextView) itemView.findViewById(R.id.tvNombreCV);
             tvLikesCV   = (TextView) itemView.findViewById(R.id.tvLikesCV);
+            imgFav    = (ImageView) itemView.findViewById(R.id.imgFavCV);
 
         }
     }

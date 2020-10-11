@@ -2,4 +2,8 @@
     <string name="app_name">PETAGRAM</string>
     <string name="nombre">nombre</string>
     <string name="rate">1</string>
+    <string name="contacto">Contacto</string>
+    <string name="acercaDe">Acerca de</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

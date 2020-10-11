@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentPerfil">
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/perro"
+        android:gravity="center">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/tvPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="MI MASCOTA"
+        android:layout_below="@id/imgPerfil">
+
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMascotasPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPerfil"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
