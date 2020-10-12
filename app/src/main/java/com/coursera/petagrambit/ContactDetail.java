@@ -44,7 +44,7 @@ public class ContactDetail extends AppCompatActivity {
         tvDescripcion.setText(descripcion);
         tvFecha.setText(fecha);
 
-        android.widget.Button btn = (android.widget.Button) findViewById(R.id.btnEnviar);
+        android.widget.Button btn = (android.widget.Button) findViewById(R.id.btnEditar);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
