@@ -4,8 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -14,11 +12,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
 
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
+
+import adapter.PageAdapter;
+import com.coursera.petagrambit.fragment.FragmentPerfil;
+import com.coursera.petagrambit.fragment.RecyclerviewFragment;
 
 public class MainActivity extends AppCompatActivity {
 

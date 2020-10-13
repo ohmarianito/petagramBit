@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 
+import adapter.MascotaAdaptador;
+
 public class Favoritos extends AppCompatActivity {
     ArrayList<Mascota> mascotas;
     private RecyclerView listaDeMascotas;

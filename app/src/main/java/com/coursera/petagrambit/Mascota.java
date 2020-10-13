@@ -2,11 +2,17 @@ package com.coursera.petagrambit;
 
 public class Mascota {
 
+
+
+    private int id;
     private int urlImage;
     private String isFav;
     private String nombre;
     private int likes;
 
+    public Mascota() {
+
+    }
     public Mascota(int urlImage, String isFav, String nombre, int likes) {
         this.urlImage = urlImage;
         this.isFav = isFav;
@@ -44,5 +50,13 @@ public class Mascota {
 
     public void setLikes(int likes) {
         this.likes = likes;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

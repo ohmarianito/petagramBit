@@ -1,4 +1,4 @@
-package com.coursera.petagrambit;
+package com.coursera.petagrambit.fragment;
 
 import android.os.Bundle;
 
@@ -10,6 +10,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.coursera.petagrambit.Mascota;
+import adapter.MascotaAdaptador;
+import com.coursera.petagrambit.R;
 
 import java.util.ArrayList;
 
@@ -29,9 +33,11 @@ public class FragmentPerfil extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_perfil, container, false);
         listaDeMascotas = (RecyclerView) v.findViewById(R.id.rvMascotasPerfil);
+
         GridLayoutManager llm = new GridLayoutManager(getContext(), 3);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         listaDeMascotas.setLayoutManager(llm);
+
         cargarDatosIniciales();
         inicializarAdaptador();
         return v;
